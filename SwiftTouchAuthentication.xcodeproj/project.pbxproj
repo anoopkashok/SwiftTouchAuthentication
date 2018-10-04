@@ -12,6 +12,7 @@
 		6E81ABAE21662A7800636727 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E81ABAC21662A7800636727 /* Main.storyboard */; };
 		6E81ABB021662A8800636727 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E81ABAF21662A8800636727 /* Assets.xcassets */; };
 		6E81ABB321662A8800636727 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E81ABB121662A8800636727 /* LaunchScreen.storyboard */; };
+		6E81ABBC21662AB700636727 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E81ABBB21662AB700636727 /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6E81ABAF21662A8800636727 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E81ABB221662A8800636727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E81ABB421662A8800636727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E81ABBB21662AB700636727 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E81ABBC21662AB700636727 /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				6E81ABA721662A7700636727 /* SwiftTouchAuthentication */,
 				6E81ABA621662A7700636727 /* Products */,
+				6E81ABBA21662AB700636727 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				6E81ABB421662A8800636727 /* Info.plist */,
 			);
 			path = SwiftTouchAuthentication;
+			sourceTree = "<group>";
+		};
+		6E81ABBA21662AB700636727 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E81ABBB21662AB700636727 /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L665RRN8MH;
 				INFOPLIST_FILE = SwiftTouchAuthentication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L665RRN8MH;
 				INFOPLIST_FILE = SwiftTouchAuthentication/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
