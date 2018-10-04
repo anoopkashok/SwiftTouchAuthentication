@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     func evaulateTocuhIdAuthenticity(context: LAContext) {
 //        guard let lastAccessedUserName = UserDefaults.standard.object(forKey: "lastAccessedUserName") as? String else { return }
-        let lastAccessedUserName = "anoop@meemmemory.com"
+        let lastAccessedUserName = "test@gmail.com"
         context.evaluatePolicy(LAPolicy.deviceOwnerAuthentication, localizedReason: lastAccessedUserName) { (authSuccessful, authError) in
             if authSuccessful {
                 print("Authentication is successful, proceed your work")
